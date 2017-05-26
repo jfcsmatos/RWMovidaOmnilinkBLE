@@ -7,13 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9AEBE4F01ED8A0340037CAE1 /* RWMovidaOmnilinkBLE.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AEBE4EE1ED8A0340037CAE1 /* RWMovidaOmnilinkBLE.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9A467CEB1ED8B267009D8761 /* CommandBLE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A467CE91ED8B267009D8761 /* CommandBLE.swift */; };
+		9A467CEC1ED8B267009D8761 /* ManagerStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A467CEA1ED8B267009D8761 /* ManagerStates.swift */; };
+		9A467CF31ED8B2C1009D8761 /* OmnilinkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A467CF11ED8B2C1009D8761 /* OmnilinkProtocol.swift */; };
+		9A467CF41ED8B2C1009D8761 /* Zamobile.java in Sources */ = {isa = PBXBuildFile; fileRef = 9A467CF21ED8B2C1009D8761 /* Zamobile.java */; };
+		9A467CF71ED8B2CB009D8761 /* BluetoothHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A467CF51ED8B2CB009D8761 /* BluetoothHelpers.swift */; };
+		9A467CF81ED8B2CB009D8761 /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A467CF61ED8B2CB009D8761 /* BluetoothManager.swift */; };
+		9A467CFA1ED8B2E0009D8761 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A467CF91ED8B2E0009D8761 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9A467CE91ED8B267009D8761 /* CommandBLE.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CommandBLE.swift; path = Source/Utils/Enums/CommandBLE.swift; sourceTree = "<group>"; };
+		9A467CEA1ED8B267009D8761 /* ManagerStates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ManagerStates.swift; path = Source/Utils/Enums/ManagerStates.swift; sourceTree = "<group>"; };
+		9A467CF11ED8B2C1009D8761 /* OmnilinkProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OmnilinkProtocol.swift; path = Source/Protocols/OmnilinkProtocol.swift; sourceTree = "<group>"; };
+		9A467CF21ED8B2C1009D8761 /* Zamobile.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; name = Zamobile.java; path = Source/Protocols/Zamobile.java; sourceTree = "<group>"; };
+		9A467CF51ED8B2CB009D8761 /* BluetoothHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BluetoothHelpers.swift; path = Source/Managers/BluetoothHelpers.swift; sourceTree = "<group>"; };
+		9A467CF61ED8B2CB009D8761 /* BluetoothManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BluetoothManager.swift; path = Source/Managers/BluetoothManager.swift; sourceTree = "<group>"; };
+		9A467CF91ED8B2E0009D8761 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Resource/Supporting Files/Info.plist"; sourceTree = "<group>"; };
 		9AEBE4EB1ED8A0340037CAE1 /* RWMovidaOmnilinkBLE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RWMovidaOmnilinkBLE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9AEBE4EE1ED8A0340037CAE1 /* RWMovidaOmnilinkBLE.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RWMovidaOmnilinkBLE.h; sourceTree = "<group>"; };
-		9AEBE4EF1ED8A0340037CAE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +38,67 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9A467CE21ED8B21B009D8761 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				9A467CE71ED8B248009D8761 /* Supporting Files */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		9A467CE31ED8B220009D8761 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				9A467CE41ED8B223009D8761 /* Protocols */,
+				9A467CE51ED8B227009D8761 /* Managers */,
+				9A467CE61ED8B23D009D8761 /* Utils */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		9A467CE41ED8B223009D8761 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				9A467CF11ED8B2C1009D8761 /* OmnilinkProtocol.swift */,
+				9A467CF21ED8B2C1009D8761 /* Zamobile.java */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		9A467CE51ED8B227009D8761 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				9A467CF51ED8B2CB009D8761 /* BluetoothHelpers.swift */,
+				9A467CF61ED8B2CB009D8761 /* BluetoothManager.swift */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		9A467CE61ED8B23D009D8761 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9A467CE81ED8B25A009D8761 /* Enums */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		9A467CE71ED8B248009D8761 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9A467CF91ED8B2E0009D8761 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9A467CE81ED8B25A009D8761 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				9A467CE91ED8B267009D8761 /* CommandBLE.swift */,
+				9A467CEA1ED8B267009D8761 /* ManagerStates.swift */,
+			);
+			name = Enums;
+			sourceTree = "<group>";
+		};
 		9AEBE4E11ED8A0330037CAE1 = {
 			isa = PBXGroup;
 			children = (
@@ -46,8 +118,8 @@
 		9AEBE4ED1ED8A0340037CAE1 /* RWMovidaOmnilinkBLE */ = {
 			isa = PBXGroup;
 			children = (
-				9AEBE4EE1ED8A0340037CAE1 /* RWMovidaOmnilinkBLE.h */,
-				9AEBE4EF1ED8A0340037CAE1 /* Info.plist */,
+				9A467CE31ED8B220009D8761 /* Source */,
+				9A467CE21ED8B21B009D8761 /* Resource */,
 			);
 			path = RWMovidaOmnilinkBLE;
 			sourceTree = "<group>";
@@ -59,7 +131,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9AEBE4F01ED8A0340037CAE1 /* RWMovidaOmnilinkBLE.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +166,7 @@
 				TargetAttributes = {
 					9AEBE4EA1ED8A0330037CAE1 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -121,6 +193,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A467CFA1ED8B2E0009D8761 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +204,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A467CF41ED8B2C1009D8761 /* Zamobile.java in Sources */,
+				9A467CF71ED8B2CB009D8761 /* BluetoothHelpers.swift in Sources */,
+				9A467CF31ED8B2C1009D8761 /* OmnilinkProtocol.swift in Sources */,
+				9A467CEB1ED8B267009D8761 /* CommandBLE.swift in Sources */,
+				9A467CF81ED8B2CB009D8761 /* BluetoothManager.swift in Sources */,
+				9A467CEC1ED8B267009D8761 /* ManagerStates.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,17 +318,19 @@
 		9AEBE4F41ED8A0340037CAE1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = RWMovidaOmnilinkBLE/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/RWMovidaOmnilinkBLE/Resource/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "e-deploy.RWMovidaOmnilinkBLE";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -257,12 +338,13 @@
 		9AEBE4F51ED8A0340037CAE1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = RWMovidaOmnilinkBLE/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/RWMovidaOmnilinkBLE/Resource/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "e-deploy.RWMovidaOmnilinkBLE";
@@ -291,6 +373,7 @@
 				9AEBE4F51ED8A0340037CAE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
